@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import de.syntax_institut.filmestreamingservice.R
 import de.syntax_institut.filmestreamingservice.databinding.FragmentDetailBinding
 
@@ -58,8 +59,8 @@ class DetailFragment : Fragment() {
         binding.detailsImageView.setImageResource(pictureId)
 
         // TODO: wenn auf den BackButton geklickt wird soll zurück zum HomeFragment navigiert werden
-        binding.floatingActionButton2.setOnClickListener {
-
+        binding.floatingActionButton.setOnClickListener {
+        view.findNavController().navigateUp()
         }
     }
 }
