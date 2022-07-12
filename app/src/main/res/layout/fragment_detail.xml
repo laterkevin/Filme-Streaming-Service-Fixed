@@ -15,7 +15,7 @@
         tools:context = ".ui.DetailFragment">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/detailsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Detailansicht"
@@ -26,7 +26,7 @@
             app:layout_constraintVertical_bias="0.085" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/detailsImageView"
             android:layout_width="348dp"
             android:layout_height="375dp"
             android:layout_marginTop="32dp"
@@ -34,7 +34,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/detailsTextView"
             app:layout_constraintVertical_bias="0.02"
             app:srcCompat="@drawable/avatar" />
 
@@ -44,10 +44,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
             android:clickable="true"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="@+id/textView"
-            app:srcCompat="@drawable/cast_ic_notification_disconnect" />
+            app:layout_constraintBottom_toBottomOf="@+id/detailsTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/detailsTextView"
+            app:layout_constraintTop_toTopOf="@+id/detailsTextView"
+            app:srcCompat="@drawable/cast_ic_notification_disconnect"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
